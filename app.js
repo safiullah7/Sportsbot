@@ -28,6 +28,7 @@ app.post('/api/user', (req, res, next) => {
     const user = new User({
         fbId: req.body.fbId,
         subscription: req.body.subscription,
+        sport: req.body.sport,
         league: req.body.league,
         team: req.body.team
     });
